@@ -1,0 +1,152 @@
+#game-page
+	display: none
+	.timer
+		$image: "game/timer.png"
+		background: image-url($image) no-repeat 
+		height: image-height($image)
+		width: image-width($image)
+		position: absolute
+		right: 0px
+		top: 45px
+		font-family: "futura-pt-condensed", "league gothic", sans-serif
+		font-size: 26px
+		font-weight: bold
+		line-height: 45px
+		color: #ffffff
+		text-align: center
+		text-shadow: 2px 2px 3px #71B592
+
+	.action
+		.help
+			$image: "game/help.png"
+			background: image-url($image) no-repeat 
+			height: image-height($image)
+			width: image-width($image)
+			position: absolute
+			right: 60px
+			bottom: 47px
+			cursor: pointer
+
+		.help:hover .tooltip
+			display: block
+
+		.tooltip
+			font-family: "futura-pt-condensed", "league gothic", sans-serif
+			font-size: 22px
+			line-height: 22px
+			text-align: justify
+			display: none
+			background: #71B592
+			color: #ffffff
+			margin-left: -130px
+			margin-top: -125px
+			padding: 10px
+			position: absolute
+			z-index: 1000
+			width: 200px
+			height: 100px
+			border: 1px solid #fff
+
+		.refresh
+			$image: "game/refresh.png"
+			background: image-url($image) no-repeat 
+			height: image-height($image)
+			width: image-width($image)
+			position: absolute
+			right: 10px
+			bottom: 47px
+			cursor: pointer
+
+
+	.game
+		width: 782px
+		margin: 0 auto
+
+		div
+			.content
+				width: 215px
+				height: 285px
+				display: block
+				margin: 6px 106px
+				cursor: pointer
+
+				.block
+					$image: "game/off-block.png"
+					background: image-url($image) no-repeat 
+					height: image-height($image)
+					width: image-width($image)
+					display: inline-block
+					margin: 1px 3px
+
+					.num
+						font-family: "futura-pt-condensed", "league gothic", sans-serif
+						font-size: 35px
+						font-weight: bold
+						line-height: 35px
+						color: #ffffff
+						padding: 0
+						margin: 15px 10px
+						position: absolute
+						text-align: center
+						width: 42px
+				.block-orange
+					$image: "game/orange-block.png"
+					background: image-url($image) no-repeat 
+					height: image-height($image)
+					width: image-width($image)
+				.block-grey
+					$image: "game/grey-block.png"
+					background: image-url($image) no-repeat 
+					height: image-height($image)
+					width: image-width($image)
+				.block-blue
+					$image: "game/blue-block.png"
+					background: image-url($image) no-repeat 
+					height: image-height($image)
+					width: image-width($image)
+				.block-yellow
+					$image: "game/yellow-block.png"
+					background: image-url($image) no-repeat 
+					height: image-height($image)
+					width: image-width($image)
+
+		.box-1, .box-2
+			$image: "game/box.png"
+			background: image-url($image) no-repeat 
+			height: image-height($image)
+			width: image-width($image)
+			position: absolute
+			top: 100px
+		.box-1
+			left: 100px
+		.box-2
+			left: 483px
+
+		.result
+			width: 90px
+			height: 90px
+			position: absolute
+			left: 459px
+			top: 200px
+		.right
+			$image: "game/right.png"
+			background: image-url($image) no-repeat center center
+		.wrong
+			$image: "game/wrong.png"
+			background: image-url($image) no-repeat center center
+.footer
+	display: none
+	width: 100%
+	height: 40px
+	background: #71B592
+	position: absolute
+	bottom: 0px
+	
+	p
+		$image: "game/p-tag.png"
+		background: image-url($image) no-repeat 
+		height: image-height($image)
+		width: image-width($image)
+		+ir-new
+		margin: 8px auto
+			

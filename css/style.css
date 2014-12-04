@@ -1,0 +1,429 @@
+/* line 1, src/_base.sass */
+*:before, *:after {
+  border: none !important;
+}
+
+/* line 3, src/_base.sass */
+a:focus {
+  outline: none !important;
+}
+
+/* line 5, src/_base.sass */
+img, a {
+  border: none;
+}
+
+/* line 9, src/_base.sass */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, src/_base.sass */
+body {
+  background: url('../img/general/bg.jpg?1417614110') no-repeat;
+  background-color: #93ECBF;
+  background-size: 100%;
+}
+
+/* line 21, src/_base.sass */
+.torso {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 0px;
+}
+
+/* line 26, src/_base.sass */
+.wrapper {
+  background: url('../img/general/section-layer.png?1417614186') repeat-x 0 46px;
+  width: 100%;
+  height: 562px;
+}
+
+/* line 32, src/_base.sass */
+section {
+  display: none;
+  position: relative;
+  width: 1000px;
+  height: 562px;
+  margin: 0 auto;
+}
+
+/* line 39, src/_base.sass */
+section.active {
+  display: block;
+}
+
+/* line 1, src/_home.sass */
+#description-page {
+  padding-top: 8px;
+}
+/* line 3, src/_home.sass */
+#description-page h1 {
+  background: url('../img/home/h1.png?1417536801') no-repeat;
+  height: 100px;
+  width: 822px;
+  display: block;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto 0;
+}
+/* line 10, src/_home.sass */
+#description-page h2 {
+  background: url('../img/home/h2.png?1417536802') no-repeat;
+  height: 53px;
+  width: 751px;
+  display: block;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 33px auto 0;
+}
+/* line 17, src/_home.sass */
+#description-page p {
+  height: 0;
+  margin: 0;
+  display: block;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 22, src/_home.sass */
+#description-page .exemple-image {
+  background: url('../img/home/image-exemple.png?1417536802') no-repeat;
+  height: 199px;
+  width: 249px;
+  display: block;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 60px auto 0;
+}
+/* line 30, src/_home.sass */
+#description-page .start {
+  background: url('../img/home/btn.png?1417613582') no-repeat;
+  height: 40px;
+  width: 104px;
+  display: block;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 36px auto 0;
+}
+/* line 37, src/_home.sass */
+#description-page .btn-shadow {
+  background: url('../img/home/shadow.png?1417613541') no-repeat;
+  height: 16px;
+  width: 675px;
+  display: block;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 10px auto 0;
+}
+
+/* line 1, src/_game.sass */
+#game-page {
+  display: none;
+}
+/* line 3, src/_game.sass */
+#game-page .timer {
+  background: url('../img/game/timer.png?1417615743') no-repeat;
+  height: 45px;
+  width: 108px;
+  position: absolute;
+  right: 0px;
+  top: 45px;
+  font-family: "futura-pt-condensed", "league gothic", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 3px #71B592;
+}
+/* line 20, src/_game.sass */
+#game-page .action .help {
+  background: url('../img/game/help.png?1417616076') no-repeat;
+  height: 40px;
+  width: 39px;
+  position: absolute;
+  right: 60px;
+  bottom: 47px;
+  cursor: pointer;
+}
+/* line 30, src/_game.sass */
+#game-page .action .help:hover .tooltip {
+  display: block;
+}
+/* line 33, src/_game.sass */
+#game-page .action .tooltip {
+  font-family: "futura-pt-condensed", "league gothic", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: justify;
+  display: none;
+  background: #71B592;
+  color: #ffffff;
+  margin-left: -130px;
+  margin-top: -125px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  width: 200px;
+  height: 100px;
+  border: 1px solid #fff;
+}
+/* line 50, src/_game.sass */
+#game-page .action .refresh {
+  background: url('../img/game/refresh.png?1417616092') no-repeat;
+  height: 40px;
+  width: 39px;
+  position: absolute;
+  right: 10px;
+  bottom: 47px;
+  cursor: pointer;
+}
+/* line 61, src/_game.sass */
+#game-page .game {
+  width: 782px;
+  margin: 0 auto;
+}
+/* line 66, src/_game.sass */
+#game-page .game div .content {
+  width: 215px;
+  height: 285px;
+  display: block;
+  margin: 6px 106px;
+  cursor: pointer;
+}
+/* line 73, src/_game.sass */
+#game-page .game div .content .block {
+  background: url('../img/game/off-block.png?1417615838') no-repeat;
+  height: 66px;
+  width: 62px;
+  display: inline-block;
+  margin: 1px 3px;
+}
+/* line 81, src/_game.sass */
+#game-page .game div .content .block .num {
+  font-family: "futura-pt-condensed", "league gothic", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 35px;
+  color: #ffffff;
+  padding: 0;
+  margin: 15px 10px;
+  position: absolute;
+  text-align: center;
+  width: 42px;
+}
+/* line 92, src/_game.sass */
+#game-page .game div .content .block-orange {
+  background: url('../img/game/orange-block.png?1417615858') no-repeat;
+  height: 66px;
+  width: 62px;
+}
+/* line 97, src/_game.sass */
+#game-page .game div .content .block-grey {
+  background: url('../img/game/grey-block.png?1417615965') no-repeat;
+  height: 65px;
+  width: 62px;
+}
+/* line 102, src/_game.sass */
+#game-page .game div .content .block-blue {
+  background: url('../img/game/blue-block.png?1417615931') no-repeat;
+  height: 66px;
+  width: 62px;
+}
+/* line 107, src/_game.sass */
+#game-page .game div .content .block-yellow {
+  background: url('../img/game/yellow-block.png?1417616016') no-repeat;
+  height: 66px;
+  width: 62px;
+}
+/* line 113, src/_game.sass */
+#game-page .game .box-1, #game-page .game .box-2 {
+  background: url('../img/game/box.png?1417615773') no-repeat;
+  height: 350px;
+  width: 400px;
+  position: absolute;
+  top: 100px;
+}
+/* line 120, src/_game.sass */
+#game-page .game .box-1 {
+  left: 100px;
+}
+/* line 122, src/_game.sass */
+#game-page .game .box-2 {
+  left: 483px;
+}
+/* line 125, src/_game.sass */
+#game-page .game .result {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 459px;
+  top: 200px;
+}
+/* line 131, src/_game.sass */
+#game-page .game .right {
+  background: url('../img/game/right.png?1417616053') no-repeat center center;
+}
+/* line 134, src/_game.sass */
+#game-page .game .wrong {
+  background: url('../img/game/wrong.png?1417616223') no-repeat center center;
+}
+
+/* line 137, src/_game.sass */
+.footer {
+  display: none;
+  width: 100%;
+  height: 40px;
+  background: #71B592;
+  position: absolute;
+  bottom: 0px;
+}
+/* line 145, src/_game.sass */
+.footer p {
+  background: url('../img/game/p-tag.png?1417616136') no-repeat;
+  height: 24px;
+  width: 542px;
+  display: block;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 8px auto;
+}
+
+/* line 1, src/_results.sass */
+#results-page {
+  display: none;
+}
+/* line 3, src/_results.sass */
+#results-page h1 {
+  background: url('../img/results/h1.png?1417625687') no-repeat;
+  height: 52px;
+  width: 286px;
+  margin: 53px auto 0;
+  display: block;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 10, src/_results.sass */
+#results-page p.score {
+  background: url('../img/results/score.png?1417625771') no-repeat;
+  height: 21px;
+  width: 140px;
+  margin: 10px auto 0;
+}
+/* line 16, src/_results.sass */
+#results-page p.score span {
+  left: 75px;
+}
+/* line 19, src/_results.sass */
+#results-page p.avarege {
+  background: url('../img/results/avarege.png?1417625812') no-repeat;
+  height: 23px;
+  width: 375px;
+  margin: 20px auto 0;
+}
+/* line 25, src/_results.sass */
+#results-page p.avarege span {
+  left: 235px;
+}
+/* line 28, src/_results.sass */
+#results-page p {
+  font-family: "futura-pt-condensed", "league gothic", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 3px #71B592;
+  position: relative;
+  display: block;
+}
+/* line 39, src/_results.sass */
+#results-page p span {
+  position: absolute;
+  margin-top: -1px;
+}
+/* line 44, src/_results.sass */
+#results-page .results {
+  width: 940px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  height: 350px;
+}
+/* line 51, src/_results.sass */
+#results-page .results div {
+  position: absolute;
+  top: 50px;
+}
+/* line 54, src/_results.sass */
+#results-page .results .box-1 {
+  background: url('../img/results/box-1.png?1417625860') no-repeat;
+  height: 240px;
+  width: 366px;
+  left: 100px;
+}
+/* line 61, src/_results.sass */
+#results-page .results .box-1 > div {
+  font-family: "futura-pt-condensed", "league gothic", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #929398;
+  text-align: center;
+  text-shadow: 1px 1px 1px #BBC7C3;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 15px;
+}
+/* line 73, src/_results.sass */
+#results-page .results .box-1 .time-reaction {
+  top: 20px;
+}
+/* line 75, src/_results.sass */
+#results-page .results .box-1 .right-answers {
+  top: 100px;
+}
+/* line 77, src/_results.sass */
+#results-page .results .box-1 .precision {
+  top: 180px;
+}
+/* line 79, src/_results.sass */
+#results-page .results .box-2 {
+  background: url('../img/results/box-2.png?1417625883') no-repeat;
+  height: 240px;
+  width: 366px;
+  left: 483px;
+}
+/* line 86, src/_results.sass */
+#results-page .results .box-2 #donutHolder {
+  width: 120px;
+  height: 120px;
+  font-family: "futura-pt-condensed", "league gothic", sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #BBC7C3;
+  text-align: center;
+  line-height: 120px;
+  font-size: 30px;
+  color: #929398;
+  position: relative;
+  margin: 80px auto 40px;
+  top: 0;
+}
+/* line 100, src/_results.sass */
+#results-page .results .box-2 #donut {
+  width: 120px;
+  height: 120px;
+  top: 0;
+}

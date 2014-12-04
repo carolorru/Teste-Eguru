@@ -1,0 +1,23 @@
+= image-block($image)
+	background: image-url($image) no-repeat
+	width: image-width($image)
+	height: image-height($image)
+
+= ir
+	background-color: transparent
+	border: 0
+	overflow: hidden
+	display: block
+	text-indent: -9999px // IE 6/7 fallback
+	
+	&:before
+		content: ""
+		display: block
+		width: 0
+		height: 101%
+
+= ir-new
+	display: block
+	text-indent: -9999px
+	white-space: nowrap
+	overflow: hidden

@@ -1,0 +1,40 @@
+*:before, *:after
+	border: none !important
+a:focus
+	outline: none !important
+img, a
+	border: none
+
+
+html, body
+	width: 100%
+	height: 100%
+	margin: 0 
+	padding: 0
+
+body
+	$image: "general/bg.jpg"
+	background: image-url($image) no-repeat 
+	background-color: #93ECBF
+	background-size: 100%
+
+.torso
+	min-height: 100%
+	position: relative
+	padding-bottom: 0px
+
+.wrapper
+	$image: "general/section-layer.png"
+	background: image-url($image) repeat-x 0 46px 
+	width: 100%
+	height: 562px
+
+section
+	display: none
+	position: relative
+	width: 1000px
+	height: 562px
+	margin: 0 auto
+
+section.active
+	display: block

@@ -1,0 +1,104 @@
+#results-page
+	display: none
+	h1
+		$image: "results/h1.png"
+		background: image-url($image) no-repeat 
+		height: image-height($image)
+		width: image-width($image)
+		margin: 53px auto 0
+		+ir-new
+	p.score
+		$image: "results/score.png"
+		background: image-url($image) no-repeat 
+		height: image-height($image)
+		width: 140px
+		margin: 10px auto 0
+		span
+			$image: "results/score.png"
+			left: image-width($image)
+	p.avarege
+		$image: "results/avarege.png"
+		background: image-url($image) no-repeat 
+		height: image-height($image)
+		width: 375px
+		margin: 20px auto 0
+		span
+			$image: "results/avarege.png"
+			left: image-width($image)
+	p
+		font-family: "futura-pt-condensed", "league gothic", sans-serif
+		font-size: 22px
+		font-weight: bold
+		line-height: 22px
+		color: #ffffff
+		text-align: center
+		text-shadow: 1px 1px 3px #71B592
+		position: relative
+		display: block
+
+		span
+			position: absolute
+			margin-top: -1px
+
+
+	.results
+		width: 940px
+		margin: 0 auto
+		display: block
+		position: relative
+		height: 350px
+
+		div
+			position: absolute
+			top: 50px
+		.box-1
+			$image: "results/box-1.png"
+			background: image-url($image) no-repeat 
+			height: image-height($image)
+			width: image-width($image)
+			left: 100px
+
+			>div
+				font-family: "futura-pt-condensed", "league gothic", sans-serif
+				font-size: 22px
+				font-weight: bold
+				line-height: 45px
+				color: #929398
+				text-align: center
+				text-shadow: 1px 1px 1px #BBC7C3
+				position: absolute
+				width: 50px
+				height: 50px
+				right: 15px
+			.time-reaction
+				top: 20px
+			.right-answers
+				top: 100px
+			.precision
+				top: 180px
+		.box-2
+			$image: "results/box-2.png"
+			background: image-url($image) no-repeat 
+			height: image-height($image)
+			width: image-width($image)
+			left: 483px
+
+			#donutHolder
+				width: 120px
+				height: 120px
+				font-family: "futura-pt-condensed", "league gothic", sans-serif
+				font-weight: bold
+				text-shadow: 1px 1px 1px #BBC7C3
+				text-align: center
+				line-height: 120px
+				font-size: 30px
+				color: #929398
+				position: relative
+				margin: 80px auto 40px
+				top: 0
+	
+			#donut
+				width: 120px
+				height: 120px
+				top: 0
+	
